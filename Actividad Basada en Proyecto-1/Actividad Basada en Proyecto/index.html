@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/estilos.css">
+    <link rel="icon" href="BMW.ico">
+    <audio id="audio-fondo" src="media/audio-fondo.mp3" loop autoplay></audio>
+    
+    <script>
+        const audioFondo = document.getElementById('audio-fondo');
+        audioFondo.volume = 0.05;
+      </script>
+
+
+        <video id="video-background" autoplay loop muted>
+            <source src="media/car.mp4" type="video/mp4">
+        </video>
+        
+        <script>
+            const audioFondo = document.getElementById('audio-fondo');
+          
+            // Volumen
+            audioFondo.volume = 0.01;
+          </script>
+</head>
+
+
+
+    <header>
+
+         <div class="titulobmw">
+           <h1>BMW</h1>
+           <p>
+              Leyendas alemanas
+           </p>
+         </div>
+         
+                        <script>
+                            function login(event) {
+                                event.preventDefault(); // Evita que el formulario se recargue
+                                const username = document.getElementById('username').value.trim();
+                                const password = document.getElementById('password').value.trim();
+                                const errorMessage = document.getElementById('error-message');
+
+                                if (username === "mondongo" && password === "1234") {
+                                    errorMessage.textContent = ""; // quita el mensaje de error
+                                    window.location.href = "pag1.html";
+                                } else {
+                                    errorMessage.textContent = "Usuario o contraseña incorrectos";
+                                    errorMessage.style.color = "red";
+                                }
+                            }
+                        </script>
+    </header>
+
+
+<body>
+
+    <div class="formulario">
+        <h1>INICIO SESIÓN</h1>
+        <form id="loginForm" onsubmit="login(event)">
+          
+            <div class="campo">
+                <input type="text" id="username" required>
+                <label for="username">Introduzca el nombre de usuario</label>
+            </div>
+            
+        
+            <div class="campo">
+                <input type="password" id="password" required>
+                <label for="password">Introduzca la contraseña</label>
+            </div>
+
+            <p id="error-message"></p>
+
+            <input type="submit" value="Iniciar Sesión">
+        </form>
+    </div>
+
+
+    <footer>
+        <div class="pie">
+
+            <h3>Datos para iniciar sesión</h3>
+            <ul>
+                <li>
+                    <strong>Usuario:</strong> mondongo
+                </li>
+        
+                <li>
+                    <strong>Contraseña:</strong> 1234
+                </li>
+                <li>
+                    <strong >Canción de fondo: </strong> Chicago Freestyle de Drake y Giveon
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+
+
+
+</html>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+
+    <channel>
+
+        <atom:link href="file:///C:/Users/Alumno2/Desktop/Actividad%20Basada%20en%20Proyecto-1/Actividad%20Basada%20en%20Proyecto/index.html" rel="self" type="application/rss+xml">
+
+        <title> BMW. Leyendas Alemanas </title>
+        <link>file:///C:/Users/Alumno2/Desktop/Actividad%20Basada%20en%20Proyecto-1/Actividad%20Basada%20en%20Proyecto/index.html</link>
+        <description>
+            Esta página Web va sobre los BMW M3 míticos, tiene una página principal con un fondo animado en bucle, una cancion de Drake de fondo y un cuadro para iniciar sesión. 
+            Cuando entras te muestra información sobre la marca y un tablón con links para las siguientes páginas. 
+            El primer link es para volver al Inicio de sesión, el segundo para otra página con una tabla con información sobre todos los coches que salen. 
+            Hay 3 links más que muestran información y fotos del coche en modo clásico, tunning y en rally
+            Por último muestra el final con datos curiosos sobre estos y videos de cada uno.
+        </description>
+
+        
+        <item>
+            <title> Nuevo M3 </title>
+            <link> file:///C:/Users/Alumno2/Desktop/Actividad%20Basada%20en%20Proyecto-1/Actividad%20Basada%20en%20Proyecto/pag3.html </link>
+            <description> Quitar la información de esta página y reemplazar la información por la de un nuevo modelo de M3 </description>
+        </item>
+
+    </channel>
+
+</rss>

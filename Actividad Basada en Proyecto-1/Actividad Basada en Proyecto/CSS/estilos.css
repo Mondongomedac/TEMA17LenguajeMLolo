@@ -1,0 +1,220 @@
+
+/* ESTA HOJA DE ESTILOS SOLO SIRVE PARA EL INDEX Y LA PAGINA 1 */
+
+
+.titulobmw{
+  background: rgba(255, 255, 255, 0.2); 
+  backdrop-filter: blur(10px); 
+  border-radius: 10px;
+  padding: 20px; 
+  width: 150%; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+  text-align: center;
+  float: left;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+body, html {
+  margin: 0; 
+  padding: 0; 
+  color: rgb(29, 27, 27); 
+  height: 100%; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+
+
+/* Video de fondo del incisio sesión */
+#video-background {
+  position: fixed; /* fijo en el fondo */
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%; 
+  z-index: -1; /* Video detrás de todo */
+}
+
+
+.contenedor-borroso {
+  background: rgba(255, 255, 255, 0.5); 
+  backdrop-filter: blur(10px);
+  border-radius: 10px; 
+  padding: 20px; 
+  margin: 30px auto; 
+  width: 80%; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+}
+
+
+/* textos dentro del contenedor */
+.contenedor-borroso p {
+  margin: 20px 0; 
+  line-height: 1.6; 
+  text-align: justify;  
+}
+
+
+
+/* Formulario */
+.formulario {
+  background-color: #fff; 
+  padding: 20px 30px; 
+  border-radius: 10px; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  width: 300px;
+  text-align: center; 
+}
+
+.formulario h1 {
+  margin-bottom: 50px; 
+  font-size: 27px; 
+  color: #a7c151; 
+}
+
+.campo {
+  position: relative; 
+  margin-bottom: 35px; 
+}
+
+.campo input {
+  width: 100%; 
+  padding: 3px; 
+  font-size: 16px; 
+  border: 1px solid #ccc; 
+  border-radius: 30px; 
+  outline: none; 
+}
+
+.campo label {
+  position: absolute; 
+  top: 50%; 
+  left: 10px;
+  transform: translateY(-50%); 
+  font-size: 12px; 
+  pointer-events: none; 
+  color: #888; 
+  transition: 0.3s; 
+}
+
+.campo input:focus ~ label,
+.campo input:not(:placeholder-shown) ~ label {
+  top: -10px; 
+  font-size: 12px; 
+  color: #000000; 
+}
+
+input[type="submit"] {
+  color: white; 
+  border: none; 
+  padding: 10px 15px; 
+  border-radius: 5px; 
+  cursor: pointer; 
+  width: 100%; 
+  font-size: 16px; 
+}
+
+input[type="submit"]:hover {
+  background-color: #000000; /* Oscurece el color al pasar el ratón */
+}
+
+#error-message {
+  margin-top: 10px; 
+  font-size: 14px; 
+  color: red; 
+  height: 18px; 
+}
+
+/* Estilo para el footer */
+footer {
+  position: fixed; 
+  left: 0;
+  bottom: 0;
+  color: rgb(208,191,191); 
+  text-align: left; 
+  padding: 10px;
+}
+
+
+
+.titutlopag {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 50px;
+    padding: 17px;
+    margin: 44px auto;
+    width: 50%;
+    
+}
+
+.titutlopag h1 {
+    margin: 20px 0;
+    text-align: center;
+    color: #fff;
+}
+
+
+
+/* MENÚ */
+.ul {
+  width: fit-content; /* Ajusta al contenido */
+  height: fit-content;
+  background-color: transparent;
+  list-style: none; /* Elimina viñetas */
+  display: flex;
+}
+
+.li {
+  margin-bottom: 0px; /* Sin espacio*/
+}
+
+.button {
+  background-color: transparent; /* Fondo transparente */
+  font-family: sans-serif;
+  color: rgb(0, 0, 0);
+  border: none; 
+  font-size: 16px; 
+  font-weight: 900;
+  padding: 0px 20px; /* Espaciado lateral */
+  cursor: pointer; 
+  position: relative;
+  padding-left: 11px;
+  text-align: center;
+  transition: 0.1s; /* Movimiento */
+  z-index: 1;
+  text-decoration: none; 
+  display: inline-block;
+}
+
+.button:hover::before {
+  transform: rotate(0deg);
+  width: 100%;
+  height: 40px;
+  top: 10px;
+  border-radius: 3px;
+  background-color: rgb(190, 185, 184);
+}
+
+.button::before {
+  content: "";
+  border-radius: 1px;
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background-color: rgb(62, 60, 59);
+  left: -10px;
+  top: 19px;
+  transform: rotate(225deg);
+  transition: 0.3s;
+  z-index: -1;
+}
+
+.button:active::before {
+  background-color: rgb(21, 47, 215);
+}
+

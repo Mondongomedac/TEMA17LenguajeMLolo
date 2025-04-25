@@ -1,0 +1,247 @@
+/* ESTA HOJA DE ESTILOS SIRVE PARA TODAS LAS HOJAS MENOS EL INDEX Y LA PAG1 */
+
+
+/* MENÚ */
+.ul {
+    width: fit-content; 
+    height: fit-content;
+    background-color: transparent;
+    list-style: none; /* Elimina viñetas */
+    display: flex; /* Elementos en línea */
+  }
+  
+  .li {
+    margin-bottom: 0px; /* Sin espacio entre elementos */
+  }
+  
+  .button {
+    background-color: transparent; 
+    font-family: sans-serif;
+    color: rgb(251, 240, 240);
+    border: none; 
+    font-size: 16px; 
+    font-weight: 900;
+    padding: 0px 20px; 
+    cursor: pointer; 
+    position: relative;
+    padding-left: 11px;
+    text-align: center;
+    transition: 0.1s;
+    z-index: 1;
+    text-decoration: none; 
+    display: inline-block;
+  }
+  
+  .button:hover::before {
+    transform: rotate(0deg);
+    width: 100%;
+    height: 40px;
+    top: 10px;
+    border-radius: 3px;
+    background-color: rgb(190, 185, 184);
+  }
+  
+  .button::before {
+    content: "";
+    border-radius: 1px;
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background-color: rgb(62, 60, 59);
+    left: -10px;
+    top: 19px;
+    transform: rotate(225deg);
+    transition: 0.3s;
+    z-index: -1;
+  }
+  
+  .button:active::before {
+    background-color: rgb(21, 47, 215);
+  }
+
+
+
+/* TABLAS */
+
+.tablae36 {
+    width: 100%;
+    color: white; 
+    border-radius: 19px;
+    overflow: hidden; 
+    background-color: rgba(27, 27, 24, 0.8);
+    margin-top: 90px;
+    margin-right: 33px ;   
+}
+
+.tablae36 thead th {
+    background-color: rgba(50, 50, 50, 0.9); 
+    padding: 12px;
+    text-align: center;
+}
+
+.tablae36 tbody th, 
+.tablae36 tbody td {
+    padding: 15px;
+    border: 1px solid rgba(114, 9, 156, 0.5);
+    text-align: center;
+}
+
+.tablae36 tbody tr:first-child {
+    background-color: rgba(139, 39, 169, 0.9);
+}
+
+
+
+.tablae46 {
+    width: 100%;
+    color: white; 
+    border-radius: 19px;
+    overflow: hidden; 
+    background-color: rgba(27, 27, 24, 0.8);
+    margin-top: 90px;
+    margin-right: 33px ;   
+}
+
+.tablae46 thead th {
+    background-color: rgba(50, 50, 50, 0.9); 
+    padding: 12px;
+    text-align: center;
+}
+
+.tablae46 tbody th, 
+.tablae46 tbody td {
+    padding: 15px;
+    border: 1px solid rgba(114, 9, 156, 0.5);
+    text-align: center;
+}
+
+.tablae46 tbody tr:first-child {
+    background-color: rgba(139, 39, 169, 0.9);
+}
+
+
+
+.tablagtr {
+    width: 100%;
+    color: white; 
+    border-radius: 19px;
+    overflow: hidden; 
+    background-color: rgba(27, 27, 24, 0.8);
+    margin-top: 90px;
+    margin-right: 33px ;   
+}
+
+.tablagtr thead th {
+    background-color: rgba(50, 50, 50, 0.9); 
+    padding: 12px;
+    text-align: center;
+}
+
+.tablagtr tbody th, 
+.tablagtr tbody td {
+    padding: 15px;
+    border: 1px solid rgba(114, 9, 156, 0.5);
+    text-align: center;
+}
+
+.tablagtr tbody tr:first-child {
+    background-color: rgba(139, 39, 169, 0.9);
+}
+
+
+
+.e36 {
+    text-align: center;
+}
+.e36 img {
+    margin: 10px;
+    width : 20%; /* Hace mas chicas las imágenes */
+    border-radius: 10%;
+}
+
+.e46 {
+    text-align: center;
+}
+.e46 img {
+    margin: 10px;
+    width : 20%; 
+    border-radius: 10%;
+}
+
+.GTR {
+    text-align: center;
+}
+.GTR img {
+    margin: 10px;
+    width : 20%; 
+    border-radius: 10%;
+}
+
+.contenedor-borroso {
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(100px);
+    border-top-left-radius: 32px;
+    border-bottom-right-radius: 30px;
+    padding: 20px;
+    margin: 30px auto;
+    width: 80%;
+    color: #000;
+    font-weight: bold;
+}
+
+.contenedor-borroso p {
+    margin: 20px 0;
+    line-height: 1.6;
+    text-align: justify;
+    font-size: 1.3em;
+    
+}
+
+.bajofoto {
+    background: rgba(255, 255, 255, 0.3);
+   
+    border-top-left-radius: 70px;
+    border-bottom-right-radius: 70px;
+    padding: 20px;
+    margin: 30px auto;
+    width: 20%;
+    color: #000;
+    font-weight: bold;
+}
+
+.bajofoto p {
+    font-size: 2.5em;
+    margin: 20px 0;
+    line-height: 0.6;
+}
+
+
+
+.titutlopag {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 50px;
+    padding: 17px;
+    margin: 44px auto;
+    width: 50%;
+    
+}
+
+.titutlopag h1 {
+    margin: 20px 0;
+    text-align: center;
+    color: #fff;
+}
+
+.video {
+    display: flex; 
+    gap: 10px; /* Espacio entre los videos */
+    justify-content: center; 
+    align-items: center; 
+    margin-top: 300px; 
+}
+
+.video iframe {
+    width: 600px; /* Ancho del video */
+    height: 400px; /* Alto del video */
+    border: none; /* Elimina bordes */
+}
